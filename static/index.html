@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Finance Tracker</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><main>
+<h1>Personal Finance Tracker</h1>
+<label for="month">Month</label><input type="month" id="month">
+<section class="cards" aria-live="polite">
+ <div class="card"><span>Income</span><b id="inc">0</b></div>
+ <div class="card"><span>Expenses</span><b id="exp">0</b></div>
+ <div class="card"><span>Savings</span><b id="sav">0</b></div>
+</section>
+<section><h2>Add transaction</h2>
+<div class="row">
+ <select id="kind" aria-label="Type"><option value="expense">Expense</option><option value="income">Income</option></select>
+ <input id="cat" placeholder="Category" aria-label="Category">
+ <input id="amt" type="number" min="0" step="0.01" placeholder="Amount" aria-label="Amount">
+ <input id="note" placeholder="Note" aria-label="Note">
+ <input id="date" type="date" aria-label="Date">
+ <button id="add">Add</button>
+</div></section>
+<section><h2>Set category budget</h2>
+<div class="row"><input id="bcat" placeholder="Category" aria-label="Budget category">
+<input id="blim" type="number" min="0" placeholder="Monthly limit" aria-label="Monthly limit"><button id="setb">Save</button></div></section>
+<section><h2>Spending by category</h2><div id="cats"></div></section>
+<section><h2>Transactions</h2>
+<table><thead><tr><th>Date</th><th>Type</th><th>Category</th><th>Note</th><th>Amount</th><th></th></tr></thead><tbody id="tbody"></tbody></table></section>
+</main><script src="/static/app.js"></script></body></html>

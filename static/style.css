@@ -1,0 +1,11 @@
+*{box-sizing:border-box}body{font-family:Arial,sans-serif;background:#f4f6fb;margin:0;color:#222}
+main{max-width:900px;margin:auto;padding:20px}h1{margin-top:0}
+section{background:#fff;padding:16px;border-radius:10px;margin:14px 0;box-shadow:0 1px 6px #0001}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;background:none;box-shadow:none;padding:0}
+.card{background:#fff;padding:14px;border-radius:10px;box-shadow:0 1px 6px #0001}.card span{display:block;font-size:13px;color:#666}.card b{font-size:22px}
+.row{display:flex;flex-wrap:wrap;gap:8px}input,select{padding:8px;border:1px solid #bbb;border-radius:6px}
+button{padding:8px 16px;background:#2f9e44;color:#fff;border:0;border-radius:6px;cursor:pointer}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px;border-bottom:1px solid #eee;font-size:14px}
+.income{color:#2f9e44}.expense{color:#e03131}.bar{background:#e9ecef;border-radius:6px;height:12px;margin:4px 0 10px}
+.bar>div{height:100%;border-radius:6px;background:#3b5bdb}.bar>div.over{background:#e03131}
+.del{background:#e03131;padding:4px 10px}
